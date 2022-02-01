@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#36000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/maidSearchPageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="House Maid Locations"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintBaseline_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.63"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText"/>
+
+
+            <TextView
+                android:id="@+id/tv_parent"
+                android:layout_width="301dp"
+                android:layout_height="63dp"
+                android:layout_marginTop="32dp"
+                android:text="Select City"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.618"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/maidSearchPageTitle"
+                tools:ignore="HardcodedText" />
+
+            <Spinner
+                android:id="@+id/sp_parent_MaidList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:contentDescription="Select city"
+                android:minHeight="55dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_parent"
+                tools:ignore="HardcodedText"/>
+
+            <TextView
+                android:id="@+id/tv_child_MaidList"
+                android:layout_width="282dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="128dp"
+                android:text="Select Area"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_parent"
+                tools:ignore="HardcodedText" />
+
+            <Spinner
+                android:id="@+id/sp_child_MaidList"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="160dp"
+                android:contentDescription="Select Area"
+                android:minHeight="55dp"
+                app:layout_constraintEnd_toEndOf="@+id/sp_parent_MaidList"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/sp_parent_MaidList"
+                app:layout_constraintTop_toBottomOf="@+id/sp_parent_MaidList"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/searchButtonMaidList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/login_page_input_bg"
+                android:text="Search"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/sp_child_MaidList"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="@+id/sp_child_MaidList"
+                app:layout_constraintTop_toBottomOf="@+id/sp_child_MaidList"
+                tools:ignore="HardcodedText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

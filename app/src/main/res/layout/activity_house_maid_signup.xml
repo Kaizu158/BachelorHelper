@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#36000000" />
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:id="@+id/maidSignupPageTitleTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="44dp"
+          android:fontFamily="@font/aclonica"
+          android:text="@string/customerSignupPageTitle"
+          android:textColor="@color/white"
+          android:textSize="44sp"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+      <EditText
+          android:id="@+id/maidSignupPageEmailInput"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="24dp"
+          android:layout_marginTop="284dp"
+          android:layout_marginEnd="24dp"
+          android:background="@drawable/login_page_input_bg"
+          android:drawableStart="@drawable/ic_baseline_email_24"
+          android:drawablePadding="10dp"
+          android:ems="10"
+          android:hint="@string/customerSignupPageEmailInputHint"
+          android:inputType="textEmailAddress"
+          android:minHeight="48dp"
+          android:paddingLeft="20dp"
+          android:paddingTop="13dp"
+          android:paddingRight="20dp"
+          android:paddingBottom="13dp"
+          android:textColor="@color/white"
+          android:textColorHint="@color/white"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/maidSignupPageTitleTextView" />
+
+      <EditText
+          android:id="@+id/maidSignupPagePasswordInput"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/login_page_input_bg"
+          android:drawableStart="@drawable/ic_baseline_security_24"
+          android:drawablePadding="10dp"
+          android:ems="10"
+          android:hint="@string/customerSignupPagePasswordInputHint"
+          android:inputType="textPassword"
+          android:paddingLeft="20dp"
+          android:paddingTop="13dp"
+          android:paddingRight="20dp"
+          android:paddingBottom="13dp"
+          android:textColor="@color/white"
+          android:textColorHint="@color/white"
+          app:layout_constraintEnd_toEndOf="@+id/maidSignupPageEmailInput"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="@+id/maidSignupPageEmailInput"
+          app:layout_constraintTop_toBottomOf="@+id/maidSignupPageEmailInput" />
+
+      <Button
+          android:id="@+id/maidSignupPageSignupButton"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="32dp"
+          android:background="@drawable/login_page_input_bg"
+          android:text="@string/customerSignupPageSignUpButton"
+          android:textColor="@color/white"
+          app:layout_constraintEnd_toEndOf="@+id/maidSignupPagePasswordInput"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="@+id/maidSignupPagePasswordInput"
+          app:layout_constraintTop_toBottomOf="@+id/maidSignupPagePasswordInput" />
+
+      <Button
+          android:id="@+id/maidSignupPageLoginButton"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="32dp"
+          android:background="@drawable/login_page_input_bg"
+          android:text="@string/customerSignupPageLoginButton"
+          android:textColor="@color/white"
+          app:layout_constraintEnd_toEndOf="@+id/maidSignupPageSignupButton"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="@+id/maidSignupPageSignupButton"
+          app:layout_constraintTop_toBottomOf="@+id/maidSignupPageSignupButton" />
+
+      <EditText
+          android:id="@+id/maidSignupPageNameInput"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="24dp"
+          android:background="@drawable/login_page_input_bg"
+          android:drawableStart="@drawable/ic_baseline_text_fields_24"
+          android:drawablePadding="10dp"
+          android:ems="10"
+          android:hint="@string/aptOwnerSignupPageNameHint"
+          android:inputType="textPersonName"
+          android:minHeight="48dp"
+          android:paddingLeft="20dp"
+          android:paddingTop="13dp"
+          android:paddingRight="20dp"
+          android:paddingBottom="13dp"
+          android:textColorHint="@color/white"
+          app:layout_constraintEnd_toEndOf="@+id/maidSignupPagePasswordInput"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="@+id/maidSignupPagePasswordInput"
+          app:layout_constraintTop_toBottomOf="@+id/maidSignupPageTitleTextView" />
+
+      <EditText
+          android:id="@+id/maidSignupPagePhoneInput"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/login_page_input_bg"
+          android:drawableStart="@drawable/ic_baseline_phone_24"
+          android:drawablePadding="10dp"
+          android:ems="10"
+          android:hint="@string/aptOwnerSignupPagePhoneHint"
+          android:inputType="number"
+          android:minHeight="48dp"
+          android:paddingLeft="20dp"
+          android:paddingTop="13dp"
+          android:paddingRight="20dp"
+          android:paddingBottom="13dp"
+          android:textColorHint="@color/white"
+          app:layout_constraintEnd_toEndOf="@+id/maidSignupPageNameInput"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="@+id/maidSignupPageNameInput"
+          app:layout_constraintTop_toBottomOf="@+id/maidSignupPageNameInput" />
+
+      <EditText
+          android:id="@+id/maidSignupPageAddressInput"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/login_page_input_bg"
+          android:drawableStart="@drawable/ic_baseline_home_24"
+          android:drawablePadding="10dp"
+          android:ems="10"
+          android:hint="@string/aptOwnerSignupPageAddressHint"
+          android:inputType="textEmailAddress"
+          android:minHeight="48dp"
+          android:paddingLeft="20dp"
+          android:paddingTop="13dp"
+          android:paddingRight="20dp"
+          android:paddingBottom="13dp"
+          android:textColorHint="@color/white"
+          app:layout_constraintEnd_toEndOf="@+id/maidSignupPagePhoneInput"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="@+id/maidSignupPagePhoneInput"
+          app:layout_constraintTop_toBottomOf="@+id/maidSignupPagePhoneInput" />
+
+      <EditText
+          android:id="@+id/maidSignupPageNIDInput"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:background="@drawable/login_page_input_bg"
+          android:drawableStart="@drawable/ic_baseline_perm_identity_24"
+          android:drawablePadding="10dp"
+          android:ems="10"
+          android:hint="@string/aptOwnerSignupPageNIDHint"
+          android:inputType="number"
+          android:minHeight="48dp"
+          android:paddingLeft="20dp"
+          android:paddingTop="13dp"
+          android:paddingRight="20dp"
+          android:paddingBottom="13dp"
+          android:textColorHint="@color/white"
+          app:layout_constraintBottom_toTopOf="@+id/maidSignupPageEmailInput"
+          app:layout_constraintEnd_toEndOf="@+id/maidSignupPageAddressInput"
+          app:layout_constraintHorizontal_bias="0.0"
+          app:layout_constraintStart_toStartOf="@+id/maidSignupPageAddressInput"
+          app:layout_constraintTop_toBottomOf="@+id/maidSignupPageAddressInput"
+          app:layout_constraintVertical_bias="0.208" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+  </ScrollView>
+
+
+</RelativeLayout>

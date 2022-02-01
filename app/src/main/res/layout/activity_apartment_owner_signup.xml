@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#36000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/aptOwnerPageTitleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:fontFamily="@font/aclonica"
+                android:text="@string/customerSignupPageTitle"
+                android:textColor="@color/white"
+                android:textSize="44sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/aptOwnerSignupPageEmailInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="284dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/login_page_input_bg"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/customerSignupPageEmailInputHint"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/aptOwnerPageTitleTextView" />
+
+            <EditText
+                android:id="@+id/aptOwnerSignupPagePasswordInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/login_page_input_bg"
+                android:drawableStart="@drawable/ic_baseline_security_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/customerSignupPagePasswordInputHint"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/aptOwnerSignupPageEmailInput"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/aptOwnerSignupPageEmailInput"
+                app:layout_constraintTop_toBottomOf="@+id/aptOwnerSignupPageEmailInput" />
+
+            <Button
+                android:id="@+id/aptOwnerSignupPageSignupButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/login_page_input_bg"
+                android:text="@string/customerSignupPageSignUpButton"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/aptOwnerSignupPagePasswordInput"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/aptOwnerSignupPagePasswordInput"
+                app:layout_constraintTop_toBottomOf="@+id/aptOwnerSignupPagePasswordInput" />
+
+            <Button
+                android:id="@+id/aptOwnerSignupPageLoginButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/login_page_input_bg"
+                android:text="@string/customerSignupPageLoginButton"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/aptOwnerSignupPageSignupButton"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/aptOwnerSignupPageSignupButton"
+                app:layout_constraintTop_toBottomOf="@+id/aptOwnerSignupPageSignupButton" />
+
+            <EditText
+                android:id="@+id/aptOwnerSignupPageNameInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/login_page_input_bg"
+                android:drawableStart="@drawable/ic_baseline_text_fields_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/aptOwnerSignupPageNameHint"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/aptOwnerSignupPagePasswordInput"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/aptOwnerSignupPagePasswordInput"
+                app:layout_constraintTop_toBottomOf="@+id/aptOwnerPageTitleTextView" />
+
+            <EditText
+                android:id="@+id/aptOwnerSignupPagePhoneInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/login_page_input_bg"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/aptOwnerSignupPagePhoneHint"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/aptOwnerSignupPageNameInput"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/aptOwnerSignupPageNameInput"
+                app:layout_constraintTop_toBottomOf="@+id/aptOwnerSignupPageNameInput" />
+
+            <EditText
+                android:id="@+id/aptOwnerSignupPageAddressInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/login_page_input_bg"
+                android:drawableStart="@drawable/ic_baseline_home_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/aptOwnerSignupPageAddressHint"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/aptOwnerSignupPagePhoneInput"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/aptOwnerSignupPagePhoneInput"
+                app:layout_constraintTop_toBottomOf="@+id/aptOwnerSignupPagePhoneInput" />
+
+            <EditText
+                android:id="@+id/aptOwnerSignupPageNIDInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/login_page_input_bg"
+                android:drawableStart="@drawable/ic_baseline_perm_identity_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/aptOwnerSignupPageNIDHint"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColorHint="@color/white"
+                app:layout_constraintBottom_toTopOf="@+id/aptOwnerSignupPageEmailInput"
+                app:layout_constraintEnd_toEndOf="@+id/aptOwnerSignupPageAddressInput"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/aptOwnerSignupPageAddressInput"
+                app:layout_constraintTop_toBottomOf="@+id/aptOwnerSignupPageAddressInput"
+                app:layout_constraintVertical_bias="0.208" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

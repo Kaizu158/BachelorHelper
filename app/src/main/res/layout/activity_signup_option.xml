@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#36000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/signupOptionPagesignUpMassageTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="132dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/signOptionPageSignupMessageTextView"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/signupPageCustomerOptionButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                android:background="@drawable/login_page_input_bg"
+                android:text="@string/signOptionPageCustomerOptionButton"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/signupOptionPagesignUpMassageTextView"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/signupOptionPagesignUpMassageTextView"
+                app:layout_constraintTop_toBottomOf="@+id/signupOptionPagesignUpMassageTextView" />
+
+            <Button
+                android:id="@+id/signupPageAptOwnerOptionButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/login_page_input_bg"
+                android:text="@string/signOptionPageAptOwnerOptionButton"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/signupPageCustomerOptionButton"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/signupPageCustomerOptionButton"
+                app:layout_constraintTop_toBottomOf="@+id/signupPageCustomerOptionButton" />
+
+            <Button
+                android:id="@+id/signupPageMaidOptionButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/login_page_input_bg"
+                android:text="@string/signOptionPageMaidOptionButton"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/signupPageAptOwnerOptionButton"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/signupPageAptOwnerOptionButton"
+                app:layout_constraintTop_toBottomOf="@+id/signupPageAptOwnerOptionButton" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

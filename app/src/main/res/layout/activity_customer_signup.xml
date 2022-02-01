@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#36000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="88dp"
+                android:layout_marginBottom="60dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/customerSignupPageTitle"
+                android:textColor="@color/white"
+                android:textSize="44sp"
+                app:layout_constraintBottom_toTopOf="@+id/customerSignupPageCustomerNameInput"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/customerSignupPageEmailInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/login_page_input_bg"
+                android:drawableStart="@drawable/ic_baseline_email_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/customerSignupPageEmailInputHint"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/customerSignupPageCustomerNameInput" />
+
+            <EditText
+                android:id="@+id/customerSignupPagePasswordInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/login_page_input_bg"
+                android:drawableStart="@drawable/ic_baseline_security_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/customerSignupPagePasswordInputHint"
+                android:inputType="textPassword"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/customerSignupPageEmailInput"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/customerSignupPageEmailInput"
+                app:layout_constraintTop_toBottomOf="@+id/customerSignupPageEmailInput" />
+
+            <Button
+                android:id="@+id/customerSignupPageSignupButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/login_page_input_bg"
+                android:text="@string/customerSignupPageSignUpButton"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/customerSignupPagePasswordInput"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="@+id/customerSignupPagePasswordInput"
+                app:layout_constraintTop_toBottomOf="@+id/customerSignupPagePasswordInput" />
+
+            <Button
+                android:id="@+id/customerSignupPageLoginButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/login_page_input_bg"
+                android:text="@string/customerSignupPageLoginButton"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/customerSignupPageSignupButton"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/customerSignupPageSignupButton"
+                app:layout_constraintTop_toBottomOf="@+id/customerSignupPageSignupButton" />
+
+            <EditText
+                android:id="@+id/customerSignupPageCustomerNameInput"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/login_page_input_bg"
+                android:drawableStart="@drawable/ic_baseline_text_fields_24"
+                android:drawablePadding="10dp"
+                android:ems="10"
+                android:hint="@string/customerSignupPageCustomerNameInputHint"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="13dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="13dp"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/customerSignupPageEmailInput"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/customerSignupPageEmailInput"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#36000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/maidHomePageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Add new location for your service"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                app:layout_constraintBaseline_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.63"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+
+            <TextView
+                android:id="@+id/tv_parent_maidHomePage"
+                android:layout_width="301dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Select City"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.695"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/maidHomePageTitle"
+                tools:ignore="HardcodedText" />
+
+            <Spinner
+                android:id="@+id/sp_parent_maidHomePage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/login_page_input_bg"
+                android:contentDescription="Select a city"
+                android:minHeight="55dp"
+                app:layout_constraintEnd_toEndOf="@+id/tv_parent_maidHomePage"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_parent_maidHomePage"
+                app:layout_constraintTop_toBottomOf="@+id/tv_parent_maidHomePage"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_child_maidHomePage"
+                android:layout_width="282dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="76dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Select Area"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/tv_parent_maidHomePage"
+                app:layout_constraintTop_toBottomOf="@+id/tv_parent_maidHomePage"
+                tools:ignore="HardcodedText" />
+
+            <Spinner
+                android:id="@+id/sp_child_maidHomePage"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:background="@drawable/login_page_input_bg"
+                android:contentDescription="Select an area"
+                android:minHeight="55dp"
+                app:layout_constraintEnd_toEndOf="@+id/sp_parent_maidHomePage"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/sp_parent_maidHomePage"
+                app:layout_constraintTop_toBottomOf="@+id/sp_parent_maidHomePage"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/customAddressInputMaidHomePage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/login_page_input_bg"
+                android:ems="10"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Example: 3rd floor, house: 2, road: 2, tejkunipara"
+                android:inputType="textPersonName"
+                android:minHeight="48dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/tvCustomAddressTitleMaidHomePage"
+                app:layout_constraintHorizontal_bias="0.771"
+                app:layout_constraintStart_toStartOf="@+id/tvCustomAddressTitleMaidHomePage"
+                app:layout_constraintTop_toBottomOf="@+id/tvCustomAddressTitleMaidHomePage"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tvCustomAddressTitleMaidHomePage"
+                android:layout_width="323dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="44dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Enter rest of the address"
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="@+id/sp_child_maidHomePage"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/sp_child_maidHomePage"
+                app:layout_constraintTop_toBottomOf="@+id/sp_child_maidHomePage"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/maidHomePageAddButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/login_page_input_bg"
+                android:text="Add"
+                android:textColor="@color/white"
+                app:layout_constraintEnd_toEndOf="@+id/customAddressInputMaidHomePage"
+                app:layout_constraintHorizontal_bias="0.947"
+                app:layout_constraintStart_toStartOf="@+id/customAddressInputMaidHomePage"
+                app:layout_constraintTop_toBottomOf="@+id/customAddressInputMaidHomePage"
+                tools:ignore="HardcodedText" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

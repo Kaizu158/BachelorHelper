@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">BachelorHelper</string>
+    <string name="loginPageMessageTextView">LOGIN</string>
+    <string name="login_activity">Login Activity</string>
+    <string name="buttonOther">Button</string>
+    <string name="owner">OWNER</string>
+
+    <string name="loginPageTitleTextView">LOGIN</string>
+    <string name="loginPageEmailHint">Email</string>
+    <string name="loginPagePasswordHint">Password</string>
+    <string name="loginPageForgot_password">Forgot Password?</string>
+    <string name="loginPageLoginButton">Login</string>
+    <string name="loginPageSignupButton">Signup</string>
+
+    <string name="signOptionPageSignupMessageTextView">Signup as?</string>
+    <string name="signOptionPageCustomerOptionButton">Customer</string>
+    <string name="signOptionPageAptOwnerOptionButton">Apartment Owner</string>
+    <string name="signOptionPageMaidOptionButton">House Maid</string>
+
+    <string name="customerSignupPageTitle">SIGNUP</string>
+    <string name="customerSignupPageCustomerNameInputHint">Enter your name</string>
+    <string name="customerSignupPageEmailInputHint">Enter a valid email</string>
+    <string name="customerSignupPagePasswordInputHint">Enter a password</string>
+    <string name="customerSignupPageSignUpButton">Signup</string>
+    <string name="customerSignupPageLoginButton">Already have an account?</string>
+
+
+    <string name="aptOwnerSignupPageSignupTitle">SIGNUP</string>
+    <string name="aptOwnerSignupPageNameHint">Enter your Name</string>
+    <string name="aptOwnerSignupPagePhoneHint">Enter your phone number</string>
+    <string name="aptOwnerSignupPageAddressHint">Enter your address</string>
+    <string name="aptOwnerSignupPageEmailAddressHint">Enter your email address</string>
+    <string name="aptOwnerSignupPageNIDHint">Enter your NID number</string>
+    <string name="aptOwnerSignupPagePasswordHint">Enter a password</string>
+    <string name="aptOwnerSignupPageSignUpButton">Signup</string>
+    <string name="aptOwnerSignupPageLoginButton">Already have an account?</string>
+    <string name="button">Button</string>
+    <string name="startPageTitle">Let us make your bachelor life a lot easier.</string>
+
+
+</resources>

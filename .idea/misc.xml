@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/drawable/border.xml" value="0.31837606837606836" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/drawable/login_page_input_bg.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/drawable/loginpage_input_bg.xml" value="0.3880208333333333" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/font/.xml" value="0.40208333333333335" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/font/font_for_bachelor_helper.xml" value="0.3299145299145299" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_apartment_details_page.xml" value="0.33" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_apartment_list.xml" value="0.261965811965812" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_apartment_owner_signup.xml" value="0.25" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_apt_list_search_result.xml" value="0.25" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_apt_owner_add_apt_page.xml" value="0.30512820512820515" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_apt_owner_home_page.xml" value="0.25" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_customer_home_page.xml" value="0.261965811965812" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_customer_signup.xml" value="0.371875" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_house_maid_home_page.xml" value="0.33" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_house_maid_signup.xml" value="0.371875" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_login.xml" value="0.371875" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_maid_details_page.xml" value="0.33" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_maid_list.xml" value="0.261965811965812" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_maid_list_search_result.xml" value="0.20085470085470086" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_signup.xml" value="0.371875" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/activity_signup_option.xml" value="0.26965811965811964" />
+        <entry key="..\:/Users/Kaizu/AndroidStudioProjects/BachelorHelper/app/src/main/res/layout/spinner_layout.xml" value="0.30512820512820515" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

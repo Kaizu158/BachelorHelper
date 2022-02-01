@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "933725291908",
+    "project_id": "shafiul-c15ed",
+    "storage_bucket": "shafiul-c15ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:933725291908:android:f4aa9e9ec2475eaf42c9d1",
+        "android_client_info": {
+          "package_name": "com.example.bachelorhelper"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "933725291908-6vul9n9n94l6ce91sdtv3jgcc9vpdpa4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBT9d7BfPRh-9pwiyD9MDMufDpHxLD3uyk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "933725291908-6vul9n9n94l6ce91sdtv3jgcc9vpdpa4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
